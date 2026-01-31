@@ -14,6 +14,7 @@ export const LogoTitleContainer = styled.div`
     justify-content: center;
     gap: 20px;
     align-items: center;
+    padding: 0px 30px;
 `;
 
 export const Heading = styled.h1`
@@ -23,14 +24,19 @@ export const Heading = styled.h1`
 `;
 
 export const SearchBoxContainer = styled.div`
-    height: 60px;
-    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 80px;
     border-radius: 10px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
 `;
 
 export const SearchComponents = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 `;
