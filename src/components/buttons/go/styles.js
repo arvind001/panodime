@@ -4,8 +4,8 @@ export const Container = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;    
-    height: 35px;
-    width: 55px;
+    height: 25px;
+    width: 35px;
     border-radius: 5px;
     border: none;
     background-color: #A92CC2;

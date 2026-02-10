@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import SecondaryButton from "../../components/buttons/secondary/secondary";
 
 export const Container = styled.div`
     background-color: #FEFBFF;
@@ -28,7 +29,7 @@ export const SearchBoxContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    height: 80px;
+    height: 50px;
     border-radius: 10px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.25);
@@ -40,3 +41,48 @@ export const SearchComponents = styled.div`
     flex-direction: column;
     gap: 20px;
 `;
+
+export const SecondaryButtonsContainer = styled.div`
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+`;
+
+export const ContentHeadingContainer = styled.div`
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    opacity: 0.5
+`;
+
+export const ContentHeadingText = styled.div`
+
+    font-size: 12px;
+    
+`;
+
+export const OverlayContentContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+`;
+
+export const OverlayContentItem = styled.div`
+    border-bottom: ${props => props.isLast ? "none" : "1px solid rgba(0, 0, 0, 0.10)"};
+    padding: 5px 0px;
+    padding-left: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(145, 38, 166, 0.1);
+        border-radius: 5px;
+        border-bottom: 1px solid transparent;
+    }
+`;
+
