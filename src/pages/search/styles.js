@@ -55,6 +55,7 @@ export const ContentHeadingContainer = styled.div`
     align-items: center;
     padding: 5px;
     padding-right: 8px;
+    // padding-right: 13px;
     padding-bottom: 10px;
     opacity: 0.5
 `;
@@ -68,11 +69,12 @@ export const ContentHeadingText = styled.div`
 export const OverlayContentContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    // gap: 5px;
 `;
 
 export const OverlayContentItem = styled.div`
     border-bottom: ${props => props.isLast ? "none" : "1px solid rgba(0, 0, 0, 0.10)"};
+    border-top: ${props => props.isFirst ? "none" : "1px solid transparent"};
     padding: 5px 0px;
     padding-left: 5px;
     font-size: 12px;
@@ -83,6 +85,40 @@ export const OverlayContentItem = styled.div`
         background-color: rgba(145, 38, 166, 0.1);
         border-radius: 5px;
         border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
     }
+`;
+
+export const ListItem = styled.div`
+  padding: 8px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px solid #e0e0e0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background-color: rgba(145, 38, 166, 0.1);;
+    border-radius: 5px;
+    border-bottom: 1px solid transparent;
+  }
+
+  &:has(+ &:hover) {
+    border-bottom: 1px solid transparent;
+  }
+`;
+
+export const Arrow = styled.span`
+  opacity: 0;
+  transition: opacity 0.2s;
+  font-size: 12px;
+
+  ${ListItem}:hover & {
+    opacity: 1;
+  }
 `;
 

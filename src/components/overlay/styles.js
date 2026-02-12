@@ -42,4 +42,6 @@ export const ContentHeading = styled.div`
     display: flex;
     justify-content: space-between;
     // padding: 10px;
+    padding-right: 8px;
+    padding-left: 5px;
 `;
