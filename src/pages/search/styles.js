@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import SecondaryButton from "../../components/buttons/secondary/secondary";
+import { colors } from "../../utils/colors";
 
 export const Container = styled.div`
-    background-color: #FEFBFF;
+    background-color: ${colors.background};
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -82,7 +83,7 @@ export const OverlayContentItem = styled.div`
     justify-content: start;
     cursor: pointer;
     &:hover {
-        background-color: rgba(145, 38, 166, 0.1);
+        background-color: ${colors.light_purple};
         border-radius: 5px;
         border-bottom: 1px solid transparent;
         border-top: 1px solid transparent;

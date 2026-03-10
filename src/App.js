@@ -1,15 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
 import Search from './pages/search/search';
+import Chat from "./pages/chat/chat";
 import GlobalStyles from './GlobalStyles';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 
 function App() {
   return (
-    <div className="App">
+
+    <BrowserRouter>
       <GlobalStyles />
-      <Search/>
-    </div>
+      <Routes>
+        <Route path="/" element={<Search />} />
+        <Route path="/chat" element={<Chat />} />
+      </Routes>
+
+    </BrowserRouter>
+
+
   );
 }
 
